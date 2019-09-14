@@ -1,0 +1,55 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+.unstyled--list { margin: 0; padding: 0; list-style: none; }
+
+.header { width: 100%; position: relative; }
+
+.header-top-wrapper { max-width: 1241px; margin: 0 auto; }
+
+.header-nav__list { width: 605px; height: 30px; display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.header-nav__link { color: #3a3a3a; transition: 0.6s; }
+
+.header-nav__link:hover { text-decoration: none; }
+
+.header-dropdown-nav { border: 1px solid #707070; border-radius: 5px; }
+
+.header-dropdown__element { color: #707070; }
+
+.gallery-element { height: 458px; }
+
+.gallery-element:nth-of-type(1) { background: url("../images/shutterstock_100419445.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(2) { background: url("../images/shutterstock_1092799319.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(3) { background: url("../images/shutterstock_791692354.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(4) { background: url("../images/shutterstock_1096147727.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(5) { background: url("../images/shutterstock_225971818.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(6) { background: url("../images/shutterstock_732177829.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(7) { background: url("../images/shutterstock_763361947.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(8) { background: url("../images/shutterstock_1031107999.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(9) { background: url("../images/shutterstock_1228204222.jpg"); background-size: cover; background-position: center; }
+
+.gallery-element:nth-of-type(10) { background: url("../images/shutterstock_1371399092.jpg"); background-size: cover; background-position: center; }
+
+.icons-wrapper { max-width: 1241px; min-height: 467px; margin: 0 auto; }
+
+.icons-element { width: 211px; height: 211px; }
+
+.icons-element:nth-of-type(odd) { background-color: #e6e6e6; }
+
+.icons-element:nth-of-type(even) { background-color: #f6f6f6; }
+
+.icons-element__img { background-color: inherit; }
+
+.contact { background-color: #808bdb; color: #f2f2f2; min-height: 500px; }
+
+.contact-header { position: relative; }
+
+.contact-header:after { display: block; content: ""; width: 65px; height: 5px; background-color: #f2f2f2; margin: 15px auto 0; border-radius: 2px; }

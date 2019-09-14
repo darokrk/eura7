@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+$whiteColor: #f2f2f2;
+$blackColor: #3a3a3a;
+$greenColor: hsl(154, 22%, 36%);
+$yellowColor: hsl(46, 99%, 55%);
+$greyColor: hsl(80, 14%, 96%);
+$redColor: #ed145b;
+
+// Responsive Breakpoints
+// -------------------------
+$break-mobile: 480px;
+$break-tablet: 768px;
+$break-desktop: 980px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $break-tablet - 1) {
+      @content;
+    }
+  } @else if $media == portrait-mobile {
+    @media only screen and (max-width: $break-mobile) {
+      @content;
+    }
+  } @else if $media == large-mobile {
+    @media only screen and (min-width: $break-mobile + 1) and (max-width: $break-tablet - 1) {
+      @content;
+    }
+  } @else if $media == portable {
+    @media only screen and (max-width: $break-desktop - 1) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (min-width: $break-tablet) and (max-width: $break-desktop - 1) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: $break-desktop) {
+      @content;
+    }
+  }
+}
+
+.unstyled--list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  &-top-wrapper {
+    max-width: 1241px;
+    margin: 0 auto;
+  }
+  &-nav__list {
+    width: 605px;
+    height: 30px;
+    display: flex;
+    // border: 1px solid red;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-nav__link {
+    color: $blackColor;
+    transition: 0.6s;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &-dropdown {
+    &-nav {
+      border: 1px solid#707070;
+      border-radius: 5px;
+    }
+    &__element {
+      color: #707070;
+    }
+  }
+}
+
+.gallery {
+  &-element {
+    height: 458px;
+    &:nth-of-type(1) {
+      background: url("../images/shutterstock_100419445.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(2) {
+      background: url("../images/shutterstock_1092799319.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(3) {
+      background: url("../images/shutterstock_791692354.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(4) {
+      background: url("../images/shutterstock_1096147727.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(5) {
+      background: url("../images/shutterstock_225971818.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(6) {
+      background: url("../images/shutterstock_732177829.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(7) {
+      background: url("../images/shutterstock_763361947.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(8) {
+      background: url("../images/shutterstock_1031107999.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(9) {
+      background: url("../images/shutterstock_1228204222.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+    &:nth-of-type(10) {
+      background: url("../images/shutterstock_1371399092.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.icons {
+  &-wrapper {
+    max-width: 1241px;
+    min-height: 467px;
+    margin: 0 auto;
+  }
+  &-element {
+    width: 211px;
+    height: 211px;
+    &:nth-of-type(odd) {
+      background-color: #e6e6e6;
+    }
+    &:nth-of-type(even) {
+      background-color: #f6f6f6;
+    }
+    &__img {
+      background-color: inherit;
+    }
+  }
+}
+
+.contact {
+  background-color: #808bdb;
+  color: $whiteColor;
+  min-height: 500px;
+  &-header {
+    position: relative;
+    &:after {
+      display: block;
+      content: "";
+      width: 65px;
+      height: 5px;
+      background-color: $whiteColor;
+      margin: 15px auto 0;
+      border-radius: 2px;
+    }
+  }
+  &-form {
+  }
+}
