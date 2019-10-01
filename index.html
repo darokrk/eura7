@@ -1,348 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Eura7 PSD to HTML</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap&subset=latin-ext"
-      rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap&subset=latin-ext"
+            rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div
-        class="header-top-wrapper d-flex justify-content-between align-items-start align-items-lg-center px-4 px-xl-0"
-      >
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+</head>
+<body>
+<header class="header">
+    <div
+            class="header-top-wrapper d-flex justify-content-between align-items-start align-items-lg-center px-4 px-xl-0"
+    >
         <div class="header__logo-wrapper">
-          <a class="header__logo-link" href="">
-            <img
-              class="header__logo-img"
-              src="./assets/images/svg/logos.svg"
-              alt="logo"
-            />
-          </a>
+            <a class="header__logo-link" href="">
+                <img
+                        class="header__logo-img"
+                        src="./assets/images/svg/logos.svg"
+                        alt="logo"
+                />
+            </a>
         </div>
 
         <nav class="header-nav navbar navbar-expand-lg navbar-light">
 
-          <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar1"
-    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
-    <div class="animated-icon1"><span></span><span></span><span></span></div>
-          </button>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar1">
-            <ul
-              class="header-nav__list d-flex justify-content-end justify-content-lg-between unstyled--list"
-            >
-              <li class="header-nav__list-element">
-                <a class="header-nav__link" href="">O mnie</a>
-              </li>
-              <li class="header-nav__list-element">
-                <a class="header-nav__link" href="">Współpraca</a>
-              </li>
-              <li class="header-nav__list-element">
-                <a class="header-nav__link" href="">Portfolio</a>
-              </li>
-              <li class="header-nav__list-element">
-                <a class="header-nav__link" href="">Opinie</a>
-              </li>
-              <li class="header-nav__list-element">
-                <a class="header-nav__link" href="">Kontakt</a>
-              </li>
-            </ul>
-          </div>
+            <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar1"
+                    aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="animated-icon1"><span></span><span></span><span></span></div>
+            </button>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul
+                        class="header-nav__list d-flex justify-content-end justify-content-lg-between unstyled--list"
+                >
+                    <li class="header-nav__list-element">
+                        <a class="header-nav__link" href="">O mnie</a>
+                    </li>
+                    <li class="header-nav__list-element">
+                        <a class="header-nav__link" href="">Współpraca</a>
+                    </li>
+                    <li class="header-nav__list-element">
+                        <a class="header-nav__link" href="">Portfolio</a>
+                    </li>
+                    <li class="header-nav__list-element">
+                        <a class="header-nav__link" href="">Opinie</a>
+                    </li>
+                    <li class="header-nav__list-element">
+                        <a class="header-nav__link" href="">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <nav class="header-dropdown-nav d-none d-lg-block">
-          <ul class="nav nav-pills">
-            <li class="nav-item dropdown header-dropdown__list">
-              <a
-                class="nav-link dropdown-toggle header-dropdown__element d-flex justify-content-between align-items-center"
-                data-toggle="dropdown"
-                href="#"
-                role="button"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >PL
-                <img
-                  class="header-dropdown__img"
-                  src="./assets/images/Inteligentny obiekt wektorowy.jpg"
-                  alt="poland flag"
-              /></a>
+            <ul class="nav nav-pills">
+                <li class="nav-item dropdown header-dropdown__list">
+                    <a
+                            class="nav-link dropdown-toggle header-dropdown__element d-flex justify-content-between align-items-center"
+                            data-toggle="dropdown"
+                            href="#"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                    >PL
+                        <img
+                                class="header-dropdown__img"
+                                src="./assets/images/Inteligentny obiekt wektorowy.jpg"
+                                alt="poland flag"
+                        /></a>
 
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"
-                  >DE<img
-                    class="header-dropdown__img mx-3"
-                    src="./assets/images/Inteligentny obiekt wektorowy.jpg"
-                    alt="poland flag"
-                /></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"
-                  >ENG<img
-                    class="header-dropdown__img mx-3"
-                    src="./assets/images/Inteligentny obiekt wektorowy.jpg"
-                    alt="poland flag"
-                /></a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#"
-                  >ITA<img
-                    class="header-dropdown__img mx-3"
-                    src="./assets/images/Inteligentny obiekt wektorowy.jpg"
-                    alt="poland flag"
-                /></a>
-              </div>
-            </li>
-          </ul>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"
+                        >DE<img
+                                class="header-dropdown__img mx-3"
+                                src="./assets/images/Inteligentny obiekt wektorowy.jpg"
+                                alt="poland flag"
+                        /></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"
+                        >ENG<img
+                                class="header-dropdown__img mx-3"
+                                src="./assets/images/Inteligentny obiekt wektorowy.jpg"
+                                alt="poland flag"
+                        /></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"
+                        >ITA<img
+                                class="header-dropdown__img mx-3"
+                                src="./assets/images/Inteligentny obiekt wektorowy.jpg"
+                                alt="poland flag"
+                        /></a>
+                    </div>
+                </li>
+            </ul>
         </nav>
-      </div>
-    </header>
-    <main>
-      <section class="gallery">
+    </div>
+</header>
+<main>
+    <section class="gallery">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 gallery-element"></div>
-            <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
-            <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
-            <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
-            ></div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
-            ></div>
-            <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
-            ></div>
-            <div
-              class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
-            ></div>
-            <div
-              class="col-12 col-md-6 col-lg-6 d-none d-sm-block gallery-element"
-            ></div>
-          </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6 gallery-element"></div>
+                <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
+                <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
+                <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
+                <div
+                        class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
+                ></div>
+                <div
+                        class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
+                ></div>
+                <div class="col-12 col-md-6 col-lg-3 gallery-element"></div>
+                <div
+                        class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
+                ></div>
+                <div
+                        class="col-12 col-md-6 col-lg-3 d-none d-sm-block gallery-element"
+                ></div>
+                <div
+                        class="col-12 col-md-6 col-lg-6 d-none d-sm-block gallery-element"
+                ></div>
+            </div>
         </div>
-      </section>
-      <section class="icons">
+    </section>
+    <section class="icons">
         <div class="icons-wrapper my-5">
-          <div
-            class="row justify-content-center justify-content-sm-around align-items-center"
-          >
             <div
-              class="col-4 col-sm-3 col-xl-2 col-xl-offset-1 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                    class="row justify-content-center justify-content-sm-around align-items-center"
             >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/1.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/2.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/3.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/4.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/5.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/6.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/7.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/8.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/9.svg"
-                alt=""
-              />
-            </div>
-            <div
-              class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3"
-            >
-              <img
-                class="icons-element__img"
-                src="./assets/images/svg/10.svg"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="contact py-5">
-        <div class="container">
-          <h2 class="contact-header text-center pb-2">Kontakt</h2>
-          <form class="contact-form">
-            <div class="row justify-content-center align-items-end">
-              <div class="form-group col-7 col-md-5 pb-2">
-                <label for="exampleInputName">Imię</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="exampleInputName"
-                  aria-describedby="emailHelp"
-                  placeholder="Imię"
-                />
-              </div>
-              <div class="form-group col-7 col-md-5 pb-2">
-                <select class="form-control form-control--option">
-                  <option>Wybierz temat</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </div>
-            </div>
-            <div class="row justify-content-center align-items-start">
-              <div class="form-group col-7 col-md-5 pt-2">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                  placeholder="Adres e-mail"
-                />
-                <div class="col-12 px-0 pt-4">
-                  <label class="form-check--label" for="exampleRadios1">Jestem:</label>
-                <div class="form-check mt-2">
-                  <input
-                          class="form-check-input form-check--rounded"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios1"
-                          value="option1"
-                          checked
-                  />
-                  <label class="form-check-label ml-3" for="exampleRadios1">
-                    Klientem
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                          class="form-check-input form-check--rounded mb-1"
-                          type="radio"
-                          name="exampleRadios"
-                          id="exampleRadios2"
-                          value="option2"
-                  />
-                  <label class="form-check-label ml-3" for="exampleRadios2">
-                    Modelką
-                  </label>
-                </div>
-                </div>
-              </div>
-              <div class="form-group col-7 col-md-5 pt-2 mb-5">
-                <textarea
-                  class="form-control form-control--mod"
-                  id="exampleFormControlTextarea1"
-                  rows="6"
-                  placeholder="Treść wiadomości"
-                ></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <div class="form-check p-4 text-center">
-                  <input class="form-check-input form-check-permissionCheck" type="checkbox" value="" id="permissionCheck">
-                  <label class="form-check-label" for="permissionCheck">
-                    Wyrażam zgodę na przetwarzanie moich danych osobowych
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 text-center">
-                <button
-                        type="button"
-                        role="submit"
-                        class="btn btn-outline-light submit-btn my-4"
+                <div
+                        class="col-4 col-sm-3 col-xl-2 col-xl-offset-1 icons-element d-flex justify-content-center align-items-center m-3 p-3"
                 >
-                  Wyslij wiadomość
-                </button>
-              </div>
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/1.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/2.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/3.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/4.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/5.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/6.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/7.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3 p-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/8.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/9.svg"
+                            alt=""
+                    />
+                </div>
+                <div
+                        class="col-4 col-sm-3 col-xl-2 icons-element d-flex justify-content-center align-items-center m-3"
+                >
+                    <img
+                            class="icons-element__img"
+                            src="./assets/images/svg/10.svg"
+                            alt=""
+                    />
+                </div>
             </div>
-          </form>
         </div>
-      </section>
-    </main>
+    </section>
+    <section class="contact py-5">
+        <div class="container">
+            <h2 class="contact-header text-center pb-2">Kontakt</h2>
+            <form class="contact-form">
+                <div class="row justify-content-center align-items-end">
+                    <div class="form-group col-7 col-md-5 pb-2">
+                        <label for="exampleInputName">Imię</label>
+                        <input
+                                type="text"
+                                class="form-control"
+                                id="exampleInputName"
+                                aria-describedby="emailHelp"
+                                placeholder="Imię"
+                        />
+                    </div>
+                    <div class="form-group col-7 col-md-5 pb-2">
+                        <select class="form-control form-control--option">
+                            <option>Wybierz temat</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-start">
+                    <div class="form-group col-7 col-md-5 pt-2">
+                        <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp"
+                                placeholder="Adres e-mail"
+                        />
+                        <div class="col-12 px-0 pt-4">
+                            <label class="form-check--label" for="exampleRadios1">Jestem:</label>
+                            <div class="form-check mt-2">
+                                <input
+                                        class="form-check-input form-check--rounded"
+                                        type="radio"
+                                        name="exampleRadios"
+                                        id="exampleRadios1"
+                                        value="option1"
+                                        checked
+                                />
+                                <label class="form-check-label ml-3" for="exampleRadios1">
+                                    Klientem
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input form-check--rounded mb-1"
+                                        type="radio"
+                                        name="exampleRadios"
+                                        id="exampleRadios2"
+                                        value="option2"
+                                />
+                                <label class="form-check-label ml-3" for="exampleRadios2">
+                                    Modelką
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-7 col-md-5 pt-2 mb-5">
+                <textarea
+                        class="form-control form-control--mod"
+                        id="exampleFormControlTextarea1"
+                        rows="6"
+                        placeholder="Treść wiadomości"
+                ></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 col-md-12 mx-auto">
+                        <div class="form-check p-4 text-center">
+                            <input class="form-check-input form-check-permissionCheck" type="checkbox" value=""
+                                   id="permissionCheck">
+                            <label class="form-check-label" for="permissionCheck">
+                                Wyrażam zgodę na przetwarzanie moich danych osobowych
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7 col-md-12 mx-auto text-center">
+                        <button
+                                type="button"
+                                role="submit"
+                                class="btn btn-outline-light submit-btn my-4 px-5"
+                        >
+                            Wyslij wiadomość
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="footer mt-5 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3">
+                    <div class="header__logo-wrapper">
+                        <a class="header__logo-link" href="">
+                            <img
+                                    class="header__logo-img"
+                                    src="./assets/images/svg/logos.svg"
+                                    alt="logo"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="socials-wrapper d-flex justify-content-around align-items-center">
+                        <a href="" class="socials-link"> <img
+                                class="socials-link__img"
+                                src="./assets/images/svg/fb.svg"
+                                alt="facebook"
+                        /></a>
+                        <a href="" class="socials-link"> <img
+                                class="socials-link__img"
+                                src="./assets/images/svg/twitter.svg"
+                                alt="twitter"
+                        /></a>
+                        <a href="" class="socials-link"> <img
+                                class="socials-link__img"
+                                src="./assets/images/svg/instagram.svg"
+                                alt="instagram"
+                        /></a>
+                        <a href="" class="socials-link"> <img
+                                class="socials-link__img"
+                                src="./assets/images/svg/be.svg"
+                                alt="be"
+                        /></a>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="newsletter-wrapper d-flex flex-column justify-content-center align-items-end">
+                        <span>tipy, techniki i nowości na rynku fotograficznym</span>
+                        <button>Newsletter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"
+></script>
+<script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"
+></script>
+<script src="assets/js/script.js"></script>
+</body>
 </html>

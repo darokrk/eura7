@@ -376,10 +376,18 @@ body {
   font-size: 20px;
 }
 .contact .submit-btn {
-  width: 395px;
+  max-width: 395px;
   font-size: 30px;
   padding: 17px 20px;
   border-radius: 10px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.socials-link__img {
+  width: 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

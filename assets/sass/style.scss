@@ -444,9 +444,23 @@ $break-desktop: 980px;
     }
   }
   .submit-btn {
-    width: 395px;
+    max-width: 395px;
     font-size: 30px;
     padding: 17px 20px;
     border-radius: 10px;
+  }
+}
+
+.footer {
+  background-color: #f0f0f0;
+}
+
+.socials {
+  &-wrapper {
+  }
+  &-link {
+    &__img {
+      width: 48px;
+    }
   }
 }
