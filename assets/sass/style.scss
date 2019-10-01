@@ -15,6 +15,7 @@ $blackColor: #000;
 $greenColor: hsl(154, 22%, 36%);
 $yellowColor: hsl(46, 99%, 55%);
 $greyColor: #b7b7b7;
+$lightGrey: #bfbfbf;
 $redColor: #ed145b;
 
 // Responsive Breakpoints
@@ -372,21 +373,80 @@ $break-desktop: 980px;
 }
 
 .contact {
-  background-color: #808bdb;
+  background-color: #6a68cd;
   color: $whiteColor;
   min-height: 500px;
   &-header {
     position: relative;
+    font-size: 48px;
+    font-weight: bold;
     &:after {
       display: block;
       content: "";
       width: 65px;
       height: 5px;
       background-color: $whiteColor;
-      margin: 15px auto 0;
+      margin: 10px auto 0;
       border-radius: 2px;
     }
   }
   &-form {
+    input, select {
+      border-radius: 10px;
+      height: 60px;
+      padding: 0 20px;
+      &:active,&:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: $lightGrey;
+        font-size: 20px;
+      }
+      option {
+        color: $blackColor;
+      }
+    }
+  }
+  .form-check {
+    font-weight: 300;
+    &:nth-of-type(2) {
+      margin-top: 10px;
+    }
+    &--label {
+      font-size: 24px;
+    }
+    &--rounded {
+      width: 20px;
+      height: 20px;
+      margin-top: .2rem;
+    }
+    &-permissionCheck {
+      height: unset;
+      margin-top: .4rem;
+      margin-left: -1.7rem;
+    }
+  }
+  .form-control {
+    &--option {
+      color: $lightGrey;
+      font-size: 20px;
+      //appearance:none;
+      //background: "./assets/images/svg/select-icon.svg";
+    }
+    &--mod {
+      min-height: 246px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      &::placeholder {
+        color: $lightGrey;
+        font-size: 20px;
+      }
+    }
+  }
+  .submit-btn {
+    width: 395px;
+    font-size: 30px;
+    padding: 17px 20px;
+    border-radius: 10px;
   }
 }

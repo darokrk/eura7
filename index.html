@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Eura7 PSD to HTML</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Muli:400,700&display=swap&subset=latin-ext"
+      href="https://fonts.googleapis.com/css?family=Muli:300,400,700&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
     <link
@@ -230,12 +230,12 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section class="contact py-5">
         <div class="container">
-          <h2 class="contact-header text-center py-5">Kontakt</h2>
+          <h2 class="contact-header text-center pb-2">Kontakt</h2>
           <form class="contact-form">
-            <div class="row justify-content-center align-items-start">
-              <div class="form-group col-7 col-md-5">
+            <div class="row justify-content-center align-items-end">
+              <div class="form-group col-7 col-md-5 pb-2">
                 <label for="exampleInputName">Imię</label>
                 <input
                   type="text"
@@ -245,8 +245,8 @@
                   placeholder="Imię"
                 />
               </div>
-              <div class="form-group col-7 col-md-5">
-                <select class="form-control">
+              <div class="form-group col-7 col-md-5 pb-2">
+                <select class="form-control form-control--option">
                   <option>Wybierz temat</option>
                   <option>2</option>
                   <option>3</option>
@@ -254,56 +254,75 @@
                   <option>5</option>
                 </select>
               </div>
-              <div class="form-group col-7 col-md-5">
+            </div>
+            <div class="row justify-content-center align-items-start">
+              <div class="form-group col-7 col-md-5 pt-2">
                 <input
                   type="email"
                   class="form-control"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Adres email"
+                  placeholder="Adres e-mail"
                 />
+                <div class="col-12 px-0 pt-4">
+                  <label class="form-check--label" for="exampleRadios1">Jestem:</label>
+                <div class="form-check mt-2">
+                  <input
+                          class="form-check-input form-check--rounded"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios1"
+                          value="option1"
+                          checked
+                  />
+                  <label class="form-check-label ml-3" for="exampleRadios1">
+                    Klientem
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                          class="form-check-input form-check--rounded mb-1"
+                          type="radio"
+                          name="exampleRadios"
+                          id="exampleRadios2"
+                          value="option2"
+                  />
+                  <label class="form-check-label ml-3" for="exampleRadios2">
+                    Modelką
+                  </label>
+                </div>
+                </div>
               </div>
-              <div class="form-group col-7 col-md-5">
+              <div class="form-group col-7 col-md-5 pt-2 mb-5">
                 <textarea
-                  class="form-control"
+                  class="form-control form-control--mod"
                   id="exampleFormControlTextarea1"
                   rows="6"
                   placeholder="Treść wiadomości"
                 ></textarea>
               </div>
-              <div class="form-check col-7 col-md-5">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios1"
-                  value="option1"
-                  checked
-                />
-                <label class="form-check-label" for="exampleRadios1">
-                  Klientem
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="option2"
-                />
-                <label class="form-check-label" for="exampleRadios2">
-                  Modelką
-                </label>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="form-check p-4 text-center">
+                  <input class="form-check-input form-check-permissionCheck" type="checkbox" value="" id="permissionCheck">
+                  <label class="form-check-label" for="permissionCheck">
+                    Wyrażam zgodę na przetwarzanie moich danych osobowych
+                  </label>
+                </div>
               </div>
             </div>
-            <button
-              type="button"
-              role="submit"
-              class="btn btn-outline-light m-auto text-center"
-            >
-              Wyslij wiadomość
-            </button>
+            <div class="row">
+              <div class="col-12 text-center">
+                <button
+                        type="button"
+                        role="submit"
+                        class="btn btn-outline-light submit-btn my-4"
+                >
+                  Wyslij wiadomość
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </section>
