@@ -61,10 +61,14 @@ $break-desktop: 980px;
 
 .header {
   width: 100%;
+  position: relative;
   &-top-wrapper {
     max-width: 1244px;
     margin: 0 auto;
     padding: 35px 0;
+  }
+  &__logo-wrapper {
+    z-index: 2;
   }
   &__logo-link {
     display: block;
@@ -82,13 +86,22 @@ $break-desktop: 980px;
       border: none;
     }
   }
+  .navbar {
+    position: unset;
+  }
   &-nav__list {
-    max-width: 642px;
     flex-wrap: wrap;
     @include respond-to(portable) {
+      position: absolute;
       width: 100%;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      z-index: 1;
       flex-direction: column;
-      align-items: flex-end;
       margin-top: 20px;
       &-element {
         padding: 5px 0;
@@ -103,16 +116,30 @@ $break-desktop: 980px;
     padding: 0 15px;
     &:hover {
       text-decoration: none;
-      color: #6764cb;
+      color: $deepBlue;
     }
-    @include respond-to(mobile) {
-      font-size: 16px;
+    @include respond-to(portrait-mobile) {
+      font-size: 30px;
     }
   }
   &-dropdown {
     &-nav {
       border: 1px solid#DADADA;
       border-radius: 5px;
+      @include respond-to(mobile) {
+        position: absolute;
+        width: 70%;
+        top: 85vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        border: none;
+      }
+    }
+    &__list {
+      @include respond-to(mobile) {
+        width: 100%;
+      }
     }
     &__element {
       width: 136px;
@@ -122,6 +149,15 @@ $break-desktop: 980px;
       transition: 0.9s;
       &:hover {
         color: #6764cb;
+      }
+      @include respond-to(mobile) {
+        width: 100%;
+      }
+    }
+    &__img {
+      @include respond-to(mobile) {
+        margin-right: 5px;
+        margin-left: auto;
       }
     }
   }
@@ -160,9 +196,9 @@ $break-desktop: 980px;
 .animated-icon3 span {
   display: block;
   position: absolute;
-  height: 3px;
+  height: 4.5px;
   width: 100%;
-  border-radius: 9px;
+  border-radius: 2.2px;
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
@@ -336,11 +372,11 @@ $break-desktop: 980px;
 }
 
 .icons {
-  &-wrapper {
-    max-width: 1241px;
-    min-height: 467px;
-    margin: 0 auto;
-  }
+  //&-wrapper {
+  //  max-width: 1241px;
+  //  min-height: 467px;
+  //  margin: 0 auto;
+  //}
   &-element {
     width: 211px;
     height: 211px;
@@ -381,6 +417,9 @@ $break-desktop: 980px;
     position: relative;
     font-size: 48px;
     font-weight: bold;
+    @include respond-to(mobile) {
+      font-size: 36px;
+    }
     &:after {
       display: block;
       content: "";
@@ -419,6 +458,15 @@ $break-desktop: 980px;
     }
     &--label {
       font-size: 24px;
+      @include respond-to(mobile) {
+        text-align: left;
+        font-size: 20px;
+      }
+    }
+    &--name {
+      @include respond-to(mobile) {
+        font-size: 14px;
+      }
     }
     &--rounded {
       width: 20px;
@@ -452,15 +500,37 @@ $break-desktop: 980px;
     max-width: 395px;
     font-size: 30px;
     padding: 17px 20px;
+    border: 3px solid;
     border-radius: 10px;
+    &:focus {
+      box-shadow: none;
+    }
+    &:active, &:hover {
+      border: 3px solid $whiteColor;
+    }
+    @include respond-to(mobile) {
+      font-size: 24px;
+    }
   }
 }
 
 // FOOTER SECTION START //
 
 .footer {
-  height: 300px;
+  min-height: 300px;
   background-color: #f0f0f0;
+  .header__logo {
+    &-link {
+      @include respond-to(mobile) {
+        text-align: center;
+      }
+    }
+    &-img {
+      @include respond-to(mobile) {
+        height: 70px;
+      }
+    }
+  }
 }
 
 .socials {
@@ -469,22 +539,44 @@ $break-desktop: 980px;
   &-link {
     &__img {
       width: 48px;
+      @include respond-to(mobile) {
+        width: 41px;
+      }
     }
   }
 }
 
 .newsletter {
   &-text {
+    color: $blackColor;
     font-weight: bold;
+    @include respond-to(mobile) {
+      text-align: center;
+    }
   }
   &-btn {
     min-height: 80px;
-    background-color: $deepBlue;
+    color: $blackColor;
     font-size: 30px;
     font-weight: bold;
-    color: $whiteColor;
-    border: none;
+    border: 3px solid $blackColor;
     border-radius: 10px;
     margin-left: 80px;
+    &:focus {
+      box-shadow: none;
+    }
+    &:active {
+      background-color: $deepBlue !important;
+      border-color: $deepBlue !important;
+    }
+    &:hover {
+      border: 3px solid $deepBlue;
+      background-color: $deepBlue;
+      color: $whiteColor;
+    }
+    @include respond-to(mobile) {
+      margin-left: 0;
+      font-size: 24px;
+    }
   }
 }
