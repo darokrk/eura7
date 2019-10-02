@@ -396,14 +396,18 @@ $break-desktop: 980px;
       border-radius: 10px;
       height: 60px;
       padding: 0 20px;
-      &:active,&:focus {
+      &:active {
         outline: none;
+      }
+      &:focus {
+        border-color: #ced4da;
+        box-shadow: none;
       }
       &::placeholder {
         color: $lightGrey;
         font-size: 20px;
       }
-      option {
+      option:not(:checked) {
         color: $blackColor;
       }
     }
@@ -451,6 +455,8 @@ $break-desktop: 980px;
     border-radius: 10px;
   }
 }
+
+// FOOTER SECTION START //
 
 .footer {
   height: 300px;

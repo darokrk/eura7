@@ -137,13 +137,15 @@ body { margin: 0; padding: 0; font-family: "Muli", sans-serif; }
 
 .contact-form input, .contact-form select { border-radius: 10px; height: 60px; padding: 0 20px; }
 
-.contact-form input:active, .contact-form input:focus, .contact-form select:active, .contact-form select:focus { outline: none; }
+.contact-form input:active, .contact-form select:active { outline: none; }
+
+.contact-form input:focus, .contact-form select:focus { border-color: #ced4da; box-shadow: none; }
 
 .contact-form input:-ms-input-placeholder, .contact-form select:-ms-input-placeholder { color: #bfbfbf; font-size: 20px; }
 
 .contact-form input::placeholder, .contact-form select::placeholder { color: #bfbfbf; font-size: 20px; }
 
-.contact-form input option, .contact-form select option { color: #000; }
+.contact-form input option:not(:checked), .contact-form select option:not(:checked) { color: #000; }
 
 .contact .form-check { font-weight: 300; }
 

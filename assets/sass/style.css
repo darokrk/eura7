@@ -333,14 +333,18 @@ body {
   height: 60px;
   padding: 0 20px;
 }
-.contact-form input:active, .contact-form input:focus, .contact-form select:active, .contact-form select:focus {
+.contact-form input:active, .contact-form select:active {
   outline: none;
+}
+.contact-form input:focus, .contact-form select:focus {
+  border-color: #ced4da;
+  box-shadow: none;
 }
 .contact-form input::placeholder, .contact-form select::placeholder {
   color: #bfbfbf;
   font-size: 20px;
 }
-.contact-form input option, .contact-form select option {
+.contact-form input option:not(:checked), .contact-form select option:not(:checked) {
   color: #000;
 }
 .contact .form-check {
